@@ -2,9 +2,13 @@ const fastify = require('fastify')({logger: true});
 
 
 
+routefiles = [
+    "nameserver"
+]
 
-
-
+routefiles.forEach((filename) => {
+    fastify.register(require(`./routes/${filename}`));
+})
 
 
 
