@@ -1,5 +1,5 @@
 const fastify = require('fastify')({logger: true});
-
+const db = require('./db');
 
 
 routefiles = [

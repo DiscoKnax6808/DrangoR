@@ -1,5 +1,5 @@
 
-const localurl = "http://0.0.0.0:2059";
+const localurl = "http://0.0.0.0:2059"; //Dont change this, you can change the port tho!
 
 async function nameserver(fastify, options) {
     fastify.get('/', async (req, rep) => {
@@ -41,7 +41,8 @@ async function nameserver(fastify, options) {
                 Thorn: localurl,
                 Videos: localurl,
                 WWW: localurl,
-                RecNetStatus: null //Change this if you want a error to pop up on builds 2021-modern - null_mason
+                RecNetStatus: null //Change this to a string like "Server Maintenance!" 
+                // if you want a error to pop up on builds 2021-modern - null_mason
 
             }
         );
